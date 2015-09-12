@@ -1,0 +1,56 @@
+
+<!-- ***************************** LOGIN FORM ***************************** -->
+<div class="row">
+  <span class="form-heading stylesample Source-Sans-Pro-normal-300">Login to My.Skyhook</span>
+</div>
+  <div class="row">
+  <div class="signup-options">
+    <form class="form-create-account">
+      <!-- Login w/ Github -->
+      <div class="form-group signup-with">
+        <a class="btn btn-default btn-md btn-primary btn-block outline" id="loginGit" data-toggle="modal" data-target="#gitModal">
+          <span class="fa-stack">
+            <i class="glyphicon-social icon-github3"></i>
+          </span>
+          <span class="btn-text">Login with Github</span>
+        </a>
+      </div>
+      <!-- Login w/ LinkedIn -->
+      <div class="form-group signup-with">
+        <a class="btn btn-default btn-md btn-primary btn-block outline" id="loginLinked" data-toggle="modal" data-target="#linkedModal">
+          <span class="fa-stack">
+            <i class="glyphicon-social icon-linkedin-with-circle"></i>
+          </span>
+          <span class="btn-text">Login with LinkedIn</span>
+        </a>
+      </div>
+
+      <p class="or-via">or via</p>
+
+      <!-- Login Input Fields -->
+      <div class="form-group">
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <div class="inner-addon left-addon">
+          <i class="glyphicon fa fa-at fa-2"></i>
+          <input type="email" id="loginEmail" class="form-control input-lg" placeholder="Email" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <div class="inner-addon left-addon">
+          <i class="glyphicon icon-key_dark"></i>
+          <input type="password" id="loginPassword" class="form-control input-lg" placeholder="Password" required>  
+        </div>
+      </div>
+
+      <p align="right"><a href="#accountrecovery" onclick="showSignup();" style="color:#fff">Forgot password</a></p>
+      
+      <button class="btn btn-md btn-primary btn-block outline" id="btnLogin" type="submit">Login</button>
+      
+      <div class="notes">
+        <br><p>Don't have an account? <a href="#signup" onclick="showSignup();" style="color:#fff; font-weight:bold;">Signup</a></p>
+      </div>
+    </form>
+  </div>
+</div>

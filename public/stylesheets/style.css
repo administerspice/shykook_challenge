@@ -1,0 +1,366 @@
+/*******************************
+			MAIN
+*******************************/
+* {
+	outline: none !important;
+}
+body {
+  padding-top: 50px;
+  font-family: 'Source Sans Pro' !important;
+  background: #7f746f;
+  color: #fff;
+}
+.Source-Sans-Pro-normal-300 {
+    font-family: 'Source Sans Pro';
+    font-style: normal !important;
+    font-weight: lighter;
+}
+
+/*******************************
+			NAVIGATION
+*******************************/
+.navbar {
+	font-weight: bold;
+}
+.navbar-brand img {
+	max-width:236px;
+	margin-top:-15px;
+}
+.navbar-default {
+  background-color: #00428d; /*navbar color blue*/
+  border: 0 !important;
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover {
+	background-color: #003C80;
+}
+.navbar-default .navbar-brand:active {
+  /*color: #fff;*/
+  background-color: #003672;
+}
+@media (max-width: 500px) {
+	.navbar-brand img {
+		max-width:195px;
+		margin-top:-6px;
+	}
+}
+
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+
+/* Buttons */
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+  color: #a1b5ca;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f2d849;
+  background-color: #00428d;
+}
+.navbar-default .navbar-nav > li > a:active {
+	background-color: #003672;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #a1b5ca;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #003672;
+}
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+  background-color: #003672;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #00428d;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #a1b5ca;
+}
+
+@media (max-width: 7700px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #a1b5ca;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f2d849;
+    background-color: #003672;
+  }
+}
+
+
+/*******************************
+			FORM
+*******************************/
+.page-content {
+	padding-top: 5%;
+	padding-bottom: 210px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: 0px;
+}
+.form-create-account {
+	margin: 10% auto;
+}
+
+/***** Signup w/ Social *****/
+.signup-options {
+	margin: auto;
+	padding-left: 37%;
+	padding-right: 37%;
+}
+.fa-stack {
+	padding-right: 35px;
+}
+.glyphicon-social {
+	font-size: 30px;
+}
+
+/***** Input Fields *****/
+.inner-addon {
+  position: relative;
+}
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 0px;
+  pointer-events: none;
+  font-size: 36px;
+}
+.glyphicon#glyphPasswordConfirm {
+	color:#504845;
+}
+.left-addon .glyphicon  { left:  0px;}
+.left-addon input  { padding-left:  30px; }
+.form-group input {
+	width: 100%;
+    margin: 0px;
+    padding: 0px 0px 0px 40px;
+    background: transparent;
+    border-width: 0px 0px 2px;
+    border-radius: 0px;
+    border-style: none none solid;
+    border-bottom-color: #fff;
+    box-shadow: none;
+    border-color: -moz-use-text-color -moz-use-text-color #FFF;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: #fff;
+    -moz-border-left-colors: none;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+}
+input[placeholder]::-webkit-input-placeholder { color: #504845; }
+input[placeholder]:-moz-placeholder { color: #504845; }
+input[placeholder]::-moz-placeholder { color: #504845; }
+.form-group input:focus {
+	box-shadow: none;
+	border-bottom-color: #fff;
+}
+#inputPasswordConfirm, #inputPasswordConfirm:focus {
+	border-bottom-color: #504845;
+}
+
+/***** Resize Settings*****/
+@media (max-width: 550px) {
+	.form-heading { font-size: 30px; }
+	.signup-options {
+		margin: 0px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+@media (min-width: 550px) and (max-width: 768px) {
+	.form-heading { font-size: 33px; }
+	.signup-options {
+		margin: 0px;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media (min-width: 769px) and (max-width: 1199px){
+	.form-heading {	font-size: 36px; }
+	.signup-options {
+		margin: 0px;
+		padding-left: 28%;
+		padding-right: 28%;
+	}
+}
+@media (min-width: 1200px){
+	.form-heading {	font-size: 36px; }
+	.signup-options {
+		margin: 0px;
+		padding-left: 37%;
+		padding-right: 37%;
+	}
+}
+
+/***** Form Text Formatting *****/
+.form-heading {	font-size: 40px; }
+.or-via {
+	padding-top: 0px;
+	padding-bottom: 25px;
+	font-style: italic;
+	font-size:20px;
+	font-weight:bold;
+	color:#504845;
+}
+.notes {
+	margin: 0px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.terms-note {
+	color: #c6b5ae;
+	font-size: 12px;
+}
+
+
+/*******************************
+			MODAL
+*******************************/
+.modal-title { text-align: center; }
+.modal-title, .modal-body {	color: #333; }
+.modal-dialog {	
+	width: 30%; 
+	margin: auto;
+}
+/***** Resize Settings*****/
+@media (max-width: 550px) { 
+	.modal-dialog { width: 85%;	}
+}
+@media (min-width: 550px) and (max-width: 768px) {
+	.modal-dialog { width: 70%; }
+}
+@media (min-width: 769px) and (max-width: 991px){
+	.modal-dialog { width: 50%; }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.modal-dialog { width: 40%; }
+}
+@media (min-width: 1200px) {
+	.modal-dialog { width: 35%; }
+}
+.modal-footer > .btn-primary:active, .modal-footer > .btn-primary:hover {
+	background: #333;
+	color: #fff;
+	border-color: #fff;
+}
+
+/*******************************
+			FOOTER
+*******************************/
+.container-fluid {
+	padding: 0px;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-bottom: 0%;
+	margin-top: 0px;
+}
+footer {
+	color: white;
+	background: #504845;
+	background-size: 100% 100%;
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	height: 70px;
+}
+.footer-links li{
+	display: inline;
+	color: #fff;
+}
+footer a { color: #fff; }
+footer a:hover { color: #b8b8b8; }
+footer a:visited {
+	color: white;
+}
+
+
+/*******************************
+		BTN TWEEKS
+*******************************/
+.btn {
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 12px 22px;
+}
+.btn.btn-primary {
+    border: 2px solid #fff;
+    color: #fff;
+    background: #6f6561;
+    padding: 12px 22px;
+}
+.btn-primary {
+	background-color: #333;
+}
+.btn-primary.btn-default:active {
+    color: #fff;
+    background: #333;
+    border-color: #fff;
+}
+.btn-primary#btnCreateAccount[disabled] {
+	color: #504845;
+	border-color: #504845;
+	background: none;
+	background-color: none;
+}
+.btn-primary.btn-block#btnCreateAccount:active,
+.btn-primary.btn-block#btnLogin:active {
+	background: #A33D00;
+}
+#btnCreateAccount:focus, #btnLogin:focus {
+	border-color: #fff;
+}
+.btn-primary:hover {
+    color: #333;
+    border-color: #cdcdcd;
+    background: #555;
+    opacity: 0.8;
+}
+#btnCreateAccount:hover, #btnLogin:hover {
+	color: #fff;
+	background: #CC4C00;
+	opacity: 1;
+}
+.btn-primary#btnCreateAccount[disabled]:hover {
+	background: none;
+	background-color: none;
+	border-color: #504845;
+	opacity: 0.6;
+	color: #504845;
+	cursor: default;
+}
+
+#btnCreateAccount {
+	background: #ff5f00;
+}
+#btnLogin {
+	background: #ff5f00;
+}
